@@ -1,0 +1,14 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "programs/lending-pool",
+    "programs/loan-manager",
+    "programs/collateral-vault",
+    "programs/credit-scorer",
+]
+
+[profile.release]
+overflow-checks = true
+lto = "fat"
+codegen-units = 1
